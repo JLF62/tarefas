@@ -40,8 +40,8 @@
   </head>
   <body>
     <div id="mensagem">
-      Este teste deve ser realizado sem sair desta página.
-      Se mudar de aba ou de janela, o teste será automaticamente anulado.
+      ATENÇÃO: Este teste TEM DE ser realizado sem sair desta página.
+      Se mudares página e/ou abrires outra página, o teste será automaticamente anulado.
     </div>
 
     <div id="quadro-teste">
@@ -78,11 +78,11 @@
           "). Informe o professor.";
       }
 
-      // ✅ 1) Aba deixou de estar visível (mudou de aba, minimizou, mudou de janela/app)
+      // ✅ 1) FOSTE AVISADO: mudaste de página, ficaste com o teste anulado.
       document.addEventListener("visibilitychange", () => {
         if (testeAnulado) return;
         if (document.visibilityState === "hidden") {
-          anularTeste("a aba/janela deixou de estar visível");
+          anularTeste("Perdeste a oportunidade de acabar o teste!");
         }
       });
 
