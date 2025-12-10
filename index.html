@@ -41,7 +41,7 @@
   <body>
     <div id="mensagem">
       ATENÇÃO: Este teste TEM DE ser realizado sem sair desta página.
-      Se mudares de página e/ou abrires outra página, o teste será automaticamente anulado.
+      NÃO mudes de página; NÃO faças «Print Sreen»; NÃO abras outra janela. Se o fizeres, o teste será automaticamente cancelado!
     </div>
 
     <div id="quadro-teste">
@@ -86,7 +86,7 @@
         }
       });
 
-      // ✅ 2) Janela perdeu o foco (fallback). Pequeno atraso para não punir foco em inputs/iframe.
+      // ✅ 2) FIZESTE O QUE ERA PROIBIDO!. Pequeno atraso para não punir foco em inputs/iframe.
       window.addEventListener("blur", function () {
         if (testeAnulado) return;
 
@@ -96,7 +96,7 @@
             document.visibilityState !== "visible" || !document.hasFocus();
 
           if (saiuDaPagina) {
-            anularTeste("a janela perdeu foco");
+            anularTeste("TESTE CANCELADO!");
           }
         }, 150);
       });
