@@ -40,8 +40,7 @@
   </head>
   <body>
     <div id="mensagem">
-      ATENÇÃO: Este teste TEM DE ser realizado sem sair desta página.
-      NÃO mudes de página; NÃO faças «Print Sreen»; NÃO abras outra janela. Se o fizeres, o teste será automaticamente cancelado!
+      ATENÇÃO: NÃO mudes de página; NÃO faças «Print Sreen»; NÃO abras outra janela. Se o fizeres, o teste será automaticamente cancelado!
     </div>
 
     <div id="quadro-teste">
@@ -78,7 +77,7 @@
           "). Podes informar o Professor!";
       }
 
-      // ✅ 1) FOSTE AVISADO: mudaste de página, ficaste com o teste anulado.
+      // ✅ 1) FOSTE AVISADO: o teste foi terminado.
       document.addEventListener("visibilitychange", () => {
         if (testeAnulado) return;
         if (document.visibilityState === "hidden") {
